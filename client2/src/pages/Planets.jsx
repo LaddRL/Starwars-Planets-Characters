@@ -1,12 +1,18 @@
-import { useState } from "react";
-import { swapiFetch } from "../helpers/swapi";
+import { useEffect, useState } from "react";
+import { swapiFetch, newHopeFetch } from "../helpers/planetFetch";
 
 
 export default function Planets(){
-    console.log("hello this is the planets")
+    const [newHopePlanets, setNewHopePlanets] = useState([])
+    useEffect(()=>{
+        newHopeFetch()
+    }, [newHopePlanets])
+
+
+
     return(
         <div>
-            {swapiFetch.name}
+            {newHopePlanets}
         </div>
     )
 }

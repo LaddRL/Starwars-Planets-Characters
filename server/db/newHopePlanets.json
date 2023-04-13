@@ -1,0 +1,43 @@
+[
+    {
+        "img": "http://cdn.playbuzz.com/cdn/16c54ffe-46be-49f9-849e-cfbbada9632c/d0e004ea-bcf5-46ff-8411-77ecda58b2de.jpg", 
+        "name": "Tatooine", 
+        "rotation_period": "23", 
+        "orbital_period": "304", 
+        "diameter": "10465", 
+        "climate": "arid", 
+        "gravity": "1 standard", 
+        "terrain": "desert", 
+        "surface_water": "1", 
+        "population": "200000",
+        "url": "data.results[0].planets[0]"
+    },
+
+    {
+        "img": "http://img3.wikia.nocookie.net/__cb20061211013805/starwars/images/4/4a/Alderaan.jpg",     
+        "name": "Alderaan", 
+        "rotation_period": "24", 
+        "orbital_period": "364", 
+        "diameter": "12500", 
+        "climate": "temperate", 
+        "gravity": "1 standard", 
+        "terrain": "grasslands, mountains", 
+        "surface_water": "40", 
+        "population": "2000000000",
+        "url": "data.results[0].planets[1]"
+    },
+
+    {
+        "img": "https://vignette2.wikia.nocookie.net/starwars/images/d/d4/Yavin-4-SWCT.png/revision/latest?cb=20170712005330",
+        "name": "Yavin IV", 
+        "rotation_period": "24", 
+        "orbital_period": "4818", 
+        "diameter": "10200", 
+        "climate": "temperate, tropical", 
+        "gravity": "1 standard", 
+        "terrain": "jungle, rainforests", 
+        "surface_water": "8", 
+        "population": "1000", 
+        "url": "data.results[0].planets[2]"
+    }
+]

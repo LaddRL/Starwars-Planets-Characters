@@ -1,8 +1,9 @@
 const express = require('express');
 const path = require('path');
-const planetData = require('./db/planets.json');
+const newHopePlanets = require('./db/newHopePlanets.json');
 const PORT = 3001;
 const swapi = require('swapi-node');
+const cors = require('cors');
 
 const app = express();
 
@@ -11,13 +12,15 @@ const router = express.Router();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(cors({origin:"http://localhost:3000"}));
+
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
-app.get('/api/planets', (req, res) => res.json(planetData));
+app.get('/api/newHopePlanets', (req, res) => res.json(newHopePlanets));
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);

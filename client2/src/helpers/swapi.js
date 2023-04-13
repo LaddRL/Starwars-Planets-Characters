@@ -1,10 +1,11 @@
 export function swapiFetch (){
-    fetch('https://swapi.dev/api/planets/1/')
+    fetch('https://swapi.dev/api/films/')
     .then(response =>
         response.json())
         .then(data =>{
-            console.log(data) 
-            return data;
+            let aNewHope = data.results[0].planets
+            console.log(aNewHope) 
+            return aNewHope;
         })
         .catch(error => 
             console.error(error));
