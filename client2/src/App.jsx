@@ -1,32 +1,24 @@
 import Planets from "./pages/Planets";
-import React from "react";
-
+import React, { useState } from "react";
+import M from "materialize-css";
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from "react-router-dom";
 
 function App() {
-  function handleClick() {
-      fetch('http://localhost:3001/api/newHopePlanets')
-      .then(response =>
-          { console.log(response)
-              return response
-          })
-          // .then(data =>{
-          //     let aNewHope = data.results[0].planets
-          //     console.log(aNewHope) 
-          //     return aNewHope;
-          // })
-          .catch(error => {
-              console.error(error);
-            })
-          }
-              return (
-                <div className='App'>
-                  <Planets/>
-                  <div>
-                    <button onClick={handleClick}>Click Me</button>
-                  </div>
-                </div>
-              )
-  }
-
+  const [newHopeData, setNewHopeData] = useState([]);
+  return (
+    <div className="App container">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Planets />} />
+          <Route path="/planets" element={<Planets />} />
+        </Routes>
+      </Router>
+      <Planets />
+      <div>
+        <button><NavLink to="/planets">Planets</NavLink></button>
+      </div>
+    </div>
+  );
+}
 
 export default App;
