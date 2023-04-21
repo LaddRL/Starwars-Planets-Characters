@@ -1,0 +1,54 @@
+[
+  {
+    "img": "https://static.wikia.nocookie.net/starwars/images/1/1d/Hoth_SWCT.png/revision/latest?cb=20160630022322",
+    "name": "Hoth",
+    "rotation_period": "23",
+    "orbital_period": "549",
+    "diameter": "7200",
+    "climate": "frozen",
+    "gravity": "1.1 standard",
+    "terrain": "tundra, ice caves, mountain ranges",
+    "surface_water": "100",
+    "population": "unknown",
+    "url": "https://swapi.dev/api/planets/4/"
+  },
+  {
+    "img": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Dagobah.jpg/220px-Dagobah.jpg",
+    "name": "Dagobah",
+    "rotation_period": "23",
+    "orbital_period": "341",
+    "diameter": "8900",
+    "climate": "murky",
+    "gravity": "N/A",
+    "terrain": "swamp, jungles",
+    "surface_water": "8",
+    "population": "unknown",
+    "url": "https://swapi.dev/api/planets/5/"
+  },
+  {
+    "img": "https://static.wikia.nocookie.net/starwars/images/2/2c/Bespin_EotECR.png/revision/latest?cb=20170222012550",
+    "name": "Bespin",
+    "rotation_period": "12",
+    "orbital_period": "5110",
+    "diameter": "118000",
+    "climate": "temperate",
+    "gravity": "1.5 (surface), 1 standard (Cloud City)",
+    "terrain": "gas giant",
+    "surface_water": "0",
+    "population": "6000000",
+    "url": "https://swapi.dev/api/planets/6/"
+  },
+  {
+    "img": "https://static.wikia.nocookie.net/starwars/images/3/36/Ord_Mantell_EotECR.png/revision/latest?cb=20170222012958",
+    "name": "Ord Mantell",
+    "rotation_period": "26",
+    "orbital_period": "334",
+    "diameter": "14050",
+    "climate": "temperate",
+    "gravity": "1 standard",
+    "terrain": "plains, seas, mesas",
+    "surface_water": "10",
+    "population": "4000000000",
+    "url": "https://swapi.dev/api/planets/27/"
+  }
+]

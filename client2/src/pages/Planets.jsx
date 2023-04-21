@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { swapiFetch, newHopeFetch } from "../helpers/planetFetch";
+import { hopeFetch, newHopeFetch } from "../helpers/planetFetch";
 
 export default function Planets() {
   const [newHopeData, setNewHopeData] = useState([]);
@@ -15,7 +15,7 @@ export default function Planets() {
       .catch((error) => {
         console.error(error);
       });
-  }, [])
+  }, []);
 
   return (
     <div>
@@ -38,7 +38,6 @@ export default function Planets() {
           </div>
         );
       })}
-      );
     </div>
   );
 }
