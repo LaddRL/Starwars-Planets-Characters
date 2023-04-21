@@ -1,7 +1,13 @@
 import Planets from "./pages/Planets";
 import React, { useState } from "react";
 import M from "materialize-css";
-import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   const [newHopeData, setNewHopeData] = useState([]);
@@ -9,14 +15,15 @@ function App() {
     <div className="App container">
       <Router>
         <Routes>
-          <Route path="/" element={<Planets />} />
-          <Route path="/planets" element={<Planets />} />
+          <Route path="/Planets" element={<Planets />} />
         </Routes>
+        <div>
+          <button>
+            <NavLink to="/Planets">Planets</NavLink>
+          </button>
+        </div>
       </Router>
       <Planets />
-      <div>
-        <button><NavLink to="/planets">Planets</NavLink></button>
-      </div>
     </div>
   );
 }

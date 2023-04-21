@@ -3,7 +3,7 @@ import { swapiFetch, newHopeFetch } from "../helpers/planetFetch";
 
 export default function Planets() {
   const [newHopeData, setNewHopeData] = useState([]);
-  function handleClick() {
+  useEffect(() => {
     fetch("http://localhost:3001/api/newHopePlanets")
       .then((response) => {
         return response.json();
@@ -15,13 +15,10 @@ export default function Planets() {
       .catch((error) => {
         console.error(error);
       });
-  }
+  }, [])
 
   return (
     <div>
-      <div>
-        <button onClick={handleClick}>Planetorium</button>
-      </div>
       {newHopeData.map((planet) => {
         return (
           <div className="row">
