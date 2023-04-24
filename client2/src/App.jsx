@@ -1,4 +1,4 @@
-import Planets from "./pages/planets";
+
 import ANewHope from "./pages/aNewHope";
 import Tesb from "./pages/Tesb";
 import Rotj from "./pages/Rotj";
