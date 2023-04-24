@@ -24,6 +24,11 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/Movies/1" element={<ANewHope />} />
+          <Route path="/Movies/2" element={<Tesb />} />
+          <Route path="/Movies/3" element={<Rotj />} />
+          <Route path="/Movies/4" element={<Tpm />} />
+          <Route path="/Movies/5" element={<Aotc />} />
+          <Route path="/Movies/6" element={<Rots />} />
         </Routes>
       </Router>
     </div>

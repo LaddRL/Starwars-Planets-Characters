@@ -1,6 +1,8 @@
 const express = require("express");
 const path = require("path");
 const newHopePlanets = require("./db/newHopePlanets.json");
+const TesbPlanets = require("./db/TesbPlanets.json");
+// Repeat for other planets!!
 const PORT = 3001;
 const swapi = require("swapi-node");
 const cors = require("cors");
@@ -12,7 +14,7 @@ const router = express.Router();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.use(cors({origin:"http://localhost:3000"}));
+app.use(cors({origin:"http://localhost:3000"}));
 
 app.use(express.static("public"));
 
