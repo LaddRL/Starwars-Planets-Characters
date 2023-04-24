@@ -1,16 +1,23 @@
-import { useEffect, useState } from "react";
-import { hopeFetch, newHopeFetch } from "../helpers/planetFetch";
+import { useEffect, useState,  } from "react";
+import { swapiFetch, newHopeFetch } from "../helpers/planetFetch";
+import { useParams } from "react-router-dom";
 
 export default function Planets() {
-  const [newHopeData, setNewHopeData] = useState([]);
+  const [moviePlData, setMoviePlData] = useState([]);
+  const {movieNum} = useParams();
+  console.log("movieNum"+ movieNum)
   useEffect(() => {
-    fetch("http://localhost:3001/api/newHopePlanets")
+    switch(movieNum) {
+      case 0:
+        fetch(`http://localhost:3001/api/newHopePlanets`)
+    }
+    fetch(`https://swapi.dev/api/films/${movieNum}`)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
-        setNewHopeData(data);
+        console.log(data.planets);
+        setMoviePlData(data.planets);
       })
       .catch((error) => {
         console.error(error);
@@ -19,7 +26,7 @@ export default function Planets() {
 
   return (
     <div>
-      {newHopeData.map((planet) => {
+      {moviePlData.map((planet) => {
         return (
           <div className="row">
             <div className="col s12 m12 l12">

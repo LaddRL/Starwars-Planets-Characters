@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 export default function HomePage(){
     const [filmData, setFilmData] = useState([]);
@@ -8,7 +8,6 @@ export default function HomePage(){
             return response.json();
           })
           .then((data) => {
-            // console.log(JSON.stringify(data.results[0]))
             setFilmData(data.results);
           })
           .catch((error) => {
@@ -26,10 +25,13 @@ export default function HomePage(){
             </div>
             <div>
                 <ul>
-                    {filmData.map((x) =>{
+                    {filmData.map((swMovie, index) =>{
                         return (
                         <li>
-                            {x.title}
+                            <a href={`/Planets/${index + 1}`}>
+                            {swMovie.title}
+                          
+                            </a>
                         </li>
                         )
                     })}

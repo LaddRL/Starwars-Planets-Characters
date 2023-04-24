@@ -1,4 +1,4 @@
-export function hopeFetch(movie) {
+export function swapiFetch(movie) {
   fetch("https://swapi.dev/api/films/")
     .then((response) => response.json())
     .then((data) => {

@@ -11,18 +11,13 @@ import {
 import HomePage from "./pages/homePage";
 
 function App() {
-  const [newHopeData, setNewHopeData] = useState([]);
+  const [moviePlData, setMoviePlData] = useState([]);
   return (
     <div className="App container">
       <Router>
-        <div>
-          <button>
-            <NavLink to="/Planets">Planets</NavLink>
-          </button>
-        </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/Planets" element={<Planets />} />
+          <Route path="/Planets/:movieNum" element={<Planets />} />
         </Routes>
       </Router>
     </div>
