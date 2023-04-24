@@ -2,7 +2,7 @@ import { useEffect, useState,  } from "react";
 import { swapiFetch, newHopeFetch } from "../helpers/planetFetch";
 import { useParams } from "react-router-dom";
 
-export default function Planets() {
+export default function ANewHope() {
   const [moviePlData, setMoviePlData] = useState([]);
   const {movieNum} = useParams();
   // console.log("movieNum"+ movieNum)

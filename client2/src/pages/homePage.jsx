@@ -28,9 +28,8 @@ export default function HomePage(){
                     {filmData.map((swMovie, index) =>{
                         return (
                         <li>
-                            <a href={`/Planets/${index + 1}`}>
+                            <a href={`/Movies/${index + 1}`}>
                             {swMovie.title}
-                          
                             </a>
                         </li>
                         )
