@@ -1,0 +1,67 @@
+[
+    {
+      "img": "http://cdn.playbuzz.com/cdn/16c54ffe-46be-49f9-849e-cfbbada9632c/d0e004ea-bcf5-46ff-8411-77ecda58b2de.jpg",
+      "name": "Tatooine",
+      "rotation_period": "23",
+      "orbital_period": "304",
+      "diameter": "10465",
+      "climate": "arid",
+      "gravity": "1 standard",
+      "terrain": "desert",
+      "surface_water": "1",
+      "population": "200000",
+      "url": "https://swapi.dev/api/planets/1/"
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Dagobah.jpg/220px-Dagobah.jpg",
+        "name": "Dagobah",
+        "rotation_period": "23",
+        "orbital_period": "341",
+        "diameter": "8900",
+        "climate": "murky",
+        "gravity": "N/A",
+        "terrain": "swamp, jungles",
+        "surface_water": "8",
+        "population": "unknown",
+        "url": "https://swapi.dev/api/planets/5/"
+      },
+      {
+        "img": "",
+        "name": "Endor",
+        "rotation_period": "18",
+        "orbital_period": "402",
+        "diameter": "4900",
+        "climate": "temperate",
+        "gravity": "0.85 standard",
+        "terrain": "forests, mountains, lakes",
+        "surface_water": "8",
+        "population": "30000000",
+        "url":"https://swapi.dev/api/planets/7/"
+      },
+      {
+        "img": "https://static.wikia.nocookie.net/starwars/images/f/f0/Naboo_planet.png/revision/latest?cb=20190210065915",
+        "name": "Naboo",
+        "rotation_period": "26",
+        "orbital_period": "312",
+        "diameter": "12120",
+        "climate": "temperate",
+        "gravity": "1 standard",
+        "terrain": "grassy hills, swamps, forests, mountains",
+        "surface_water": "12",
+        "population": "4500000000",
+        "url":"https://swapi.dev/api/planets/8/"
+      },
+      {
+        "img": "https://static.wikia.nocookie.net/starwars/images/1/16/Coruscant-EotE.jpg/revision/latest?cb=20130908205521",
+        "name": "Coruscant",
+	    "rotation_period": "24",
+	    "orbital_period": "368",
+	    "diameter": "12240",
+	    "climate": "temperate",
+	    "gravity": "1 standard",
+	    "terrain": "cityscape, mountains",
+	    "surface_water": "unknown",
+	    "population": "1000000000000",
+        "url":"https://swapi.dev/api/planets/9/"
+      }
+]

@@ -1,0 +1,67 @@
+[
+    {
+      "img": "http://cdn.playbuzz.com/cdn/16c54ffe-46be-49f9-849e-cfbbada9632c/d0e004ea-bcf5-46ff-8411-77ecda58b2de.jpg",
+      "name": "Tatooine",
+      "rotation_period": "23",
+      "orbital_period": "304",
+      "diameter": "10465",
+      "climate": "arid",
+      "gravity": "1 standard",
+      "terrain": "desert",
+      "surface_water": "1",
+      "population": "200000",
+      "url": "https://swapi.dev/api/planets/1/"
+    },
+    {
+        "img": "https://static.wikia.nocookie.net/starwars/images/f/f0/Naboo_planet.png/revision/latest?cb=20190210065915",
+        "name": "Naboo",
+        "rotation_period": "26",
+        "orbital_period": "312",
+        "diameter": "12120",
+        "climate": "temperate",
+        "gravity": "1 standard",
+        "terrain": "grassy hills, swamps, forests, mountains",
+        "surface_water": "12",
+        "population": "4500000000",
+        "url":"https://swapi.dev/api/planets/8/"
+      },
+      {
+        "img": "https://static.wikia.nocookie.net/starwars/images/1/16/Coruscant-EotE.jpg/revision/latest?cb=20130908205521",
+        "name": "Coruscant",
+	    "rotation_period": "24",
+	    "orbital_period": "368",
+	    "diameter": "12240",
+	    "climate": "temperate",
+	    "gravity": "1 standard",
+	    "terrain": "cityscape, mountains",
+	    "surface_water": "unknown",
+	    "population": "1000000000000",
+        "url":"https://swapi.dev/api/planets/9/"
+      },
+      {
+        "img": "https://static.wikia.nocookie.net/starwars/images/a/a9/Eaw_Kamino.jpg/revision/latest?cb=20090527045541",
+        "name": "Kamino",
+	    "rotation_period": "27",
+	    "orbital_period": "463",
+	    "diameter": "19720",
+	    "climate": "temperate",
+	    "gravity": "1 standard",
+	    "terrain": "ocean",
+	    "surface_water": "100",
+	    "population": "1000000000",
+        "url":"https://swapi.dev/api/planets/10/"
+      },
+      {
+        "img":"https://static.wikia.nocookie.net/starwars/images/6/6d/Geonosis_AotC.png/revision/latest?cb=20121231120327",
+        "name": "Geonosis",
+	    "rotation_period": "30",
+	    "orbital_period": "256",
+	    "diameter": "11370",
+	    "climate": "temperate, arid",
+	    "gravity": "0.9 standard",
+	    "terrain": "rock, desert, mountain, barren",
+	    "surface_water": "5",
+	    "population": "100000000000",
+        "url":"https://swapi.dev/api/planets/11/"
+      }
+]

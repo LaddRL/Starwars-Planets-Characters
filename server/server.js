@@ -2,6 +2,10 @@ const express = require("express");
 const path = require("path");
 const newHopePlanets = require("./db/newHopePlanets.json");
 const TesbPlanets = require("./db/TesbPlanets.json");
+const RotjPlanets = require("./db/RotjPlanets.json");
+const TpmPlanets = require("./db/TpmPlanets.json");
+const AotcPlanets = require("./db/AotcPlanets.json");
+const RotsPlanets = require("./db/RotsPlanets.json");
 // Repeat for other planets!!
 const PORT = 3001;
 const swapi = require("swapi-node");
