@@ -30,17 +30,21 @@ export default function ANewHope() {
         return (
           <div className="row">
             <div className="col s12 m12 l12">
-              {/* Imagine this div as a card with its pic and info on it like its name, etc  */}
-              <h2>{planet.name}</h2>
+              <div className="card center  deep-purple lighten-3">
+              <div className="row"></div>
+              <h1>{planet.name}</h1>
               <img
                 className="img-responsive"
                 style={{ width: 500, height: 500 }}
                 src={planet.img}
               ></img>
-              <li>Climate: {planet.climate}</li>
-              <li>Terrain: {planet.terrain}</li>
-              <li>Population: {planet.population}</li>
-              <li>Diameter: {planet.diameter}</li>
+              <h5>Climate: {planet.climate}</h5>
+              <h5>Terrain: {planet.terrain}</h5>
+              <h5>Population: {planet.population}</h5>
+              <h5>Diameter: {planet.diameter}</h5>
+              <div className="row"></div>
+              </div>
+              {/* Imagine this div as a card with its pic and info on it like its name, etc  */}
             </div>
           </div>
         );

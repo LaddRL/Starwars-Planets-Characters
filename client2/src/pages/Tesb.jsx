@@ -1,16 +1,9 @@
 import { useEffect, useState,  } from "react";
-import { swapiFetch, newHopeFetch } from "../helpers/planetFetch";
-import { useParams } from "react-router-dom";
 
 export default function Tesb() {
   const [moviePlData, setMoviePlData] = useState([]);
-  const {movieNum} = useParams();
   // console.log("movieNum"+ movieNum)
   useEffect(() => {
-    // switch(movieNum) {
-    //   case 0:
-    //     fetch(`http://localhost:3001/api/newHopePlanets `)
-    // }
     fetch(`http://localhost:3001/api/TesbPlanets`)
       .then((response) => {
         return response.json();
