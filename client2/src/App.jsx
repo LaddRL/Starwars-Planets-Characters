@@ -7,10 +7,10 @@ import Aotc from "./pages/Aotc";
 import Rots from "./pages/Rots";
 import AnhPpl from "./pages/peoplePages/AnhPpl";
 import TesbPpl from "./pages/peoplePages/TesbPpl";
-// import RotjPpl from "./pages/peoplePages/RotjPpl";
-// import TpmPpl from "./pages/peoplePages/TpmPpl";
-// import AotcPpl from "./pages/peoplePages/AotcPpl";
-// import RotsPpl from "./pages/peoplePages/RotsPpl";
+import RotjPpl from "./pages/peoplePages/RotjPpl";
+import TpmPpl from "./pages/peoplePages/TpmPpl";
+import AotcPpl from "./pages/peoplePages/AotcPpl";
+import RotsPpl from "./pages/peoplePages/RotsPpl";
 import React, { useState } from "react";
 import M from "materialize-css";
 import {
@@ -37,10 +37,10 @@ function App() {
           <Route path="/Movies/6" element={<Rots />} />
           <Route path="/People/1" element={<AnhPpl />} />
           <Route path="/People/2" element={<TesbPpl />} />
-          {/* <Route path="/People/3" element={<RotjPpl />} />
+          <Route path="/People/3" element={<RotjPpl />} />
           <Route path="/People/4" element={<TpmPpl />} />
           <Route path="/People/5" element={<AotcPpl />} />
-          <Route path="/People/6" element={<RotsPpl />} /> */}
+          <Route path="/People/6" element={<RotsPpl />} /> 
         </Routes>
       </Router>
     </div>

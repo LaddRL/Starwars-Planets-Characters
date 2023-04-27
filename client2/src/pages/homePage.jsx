@@ -21,8 +21,8 @@ export default function HomePage() {
         <h1>Welcome to the galaxy!</h1>
       </div>
       <div className="col s12 m6 l6">
-        <h3 className="">Planets featured!</h3>
-        <div className="left">
+        <h3 className="left-align">Planets featured!</h3>
+        <div className="left-align">
           {filmData.map((swMovie, index) => {
             return (
               <h5 className="card-content">
@@ -33,8 +33,8 @@ export default function HomePage() {
         </div>
       </div>
       <div className="col s12 m6 l6">
-        <h3 className="right">Characters featured!</h3>
-        <div className="right">
+        <h3 className="right-align">Characters featured!</h3>
+        <div className="right-align">
           <h5 className="card-content">
             <a href="/People/1">A New Hope Characters</a><br />
             <a href="/People/2">The Empire Strikes Back Characters</a><br />

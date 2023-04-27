@@ -8,10 +8,10 @@ const AotcPlanets = require("./db/AotcPlanets.json");
 const RotsPlanets = require("./db/RotsPlanets.json");
 const AnhPpl = require("./db/Ppldb/AnhPpl.json");
 const TesbPpl = require("./db/Ppldb/TesbPpl.json");
-// const RotjPpl = require("./db/Ppldb/RotjPpl.json");
-// const TpmPpl = require("./db/Ppldb/TpmPpl.json");
-// const AotcPpl = require("./db/Ppldb/AotcPpl.json");
-// const RotsPpl = require("./db/Ppldb/RotsPpl.json");
+const RotjPpl = require("./db/Ppldb/RotjPpl.json");
+const TpmPpl = require("./db/Ppldb/TpmPpl.json");
+const AotcPpl = require("./db/Ppldb/AotcPpl.json");
+const RotsPpl = require("./db/Ppldb/RotsPpl.json");
 // UN-COMMENT THE PPL JSON WHEN YOU FILL THEM WITH THE INFO
 const PORT = 3001;
 const swapi = require("swapi-node");
@@ -40,10 +40,10 @@ app.get("/api/AotcPlanets", (req, res) => res.json(AotcPlanets));
 app.get("/api/RotsPlanets", (req, res) => res.json(RotsPlanets));
 app.get("/api/AnhPpl", (req, res) => res.json(AnhPpl));
 app.get("/api/TesbPpl", (req, res) => res.json(TesbPpl));
-// app.get("/api/RotjPpl", (req, res) => res.json(RotjPpl));
-// app.get("/api/TpmPpl", (req, res) => res.json(TpmPpl));
-// app.get("/api/AotcPpl", (req, res) => res.json(AotcPpl));
-// app.get("/api/RotsPpl", (req, res) => res.json(RotsPpl));
+app.get("/api/RotjPpl", (req, res) => res.json(RotjPpl));
+app.get("/api/TpmPpl", (req, res) => res.json(TpmPpl));
+app.get("/api/AotcPpl", (req, res) => res.json(AotcPpl));
+app.get("/api/RotsPpl", (req, res) => res.json(RotsPpl));
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
