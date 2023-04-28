@@ -39,13 +39,18 @@ export default function HomePage() {
             <h5 className="card-content">
               <a href="/People/1">A New Hope Characters</a>
               <br />
+              <br />
               <a href="/People/2">The Empire Strikes Back Characters</a>
+              <br />
               <br />
               <a href="/People/3">Return of the Jedi Characters</a>
               <br />
+              <br />
               <a href="/People/4">The Phantom Menace Characters</a>
               <br />
+              <br />
               <a href="/People/5">Attack of the Clones Characters</a>
+              <br />
               <br />
               <a href="/People/6">Revenge of the Sith Characters</a>
             </h5>

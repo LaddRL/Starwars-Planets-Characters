@@ -5,12 +5,8 @@ import { useParams } from "react-router-dom";
 export default function Aotc() {
   const [moviePlData, setMoviePlData] = useState([]);
   const {movieNum} = useParams();
-  // console.log("movieNum"+ movieNum)
+
   useEffect(() => {
-    // switch(movieNum) {
-    //   case 0:
-    //     fetch(`http://localhost:3001/api/newHopePlanets `)
-    // }
     fetch(`http://localhost:3001/api/AotcPlanets`)
       .then((response) => {
         return response.json();
