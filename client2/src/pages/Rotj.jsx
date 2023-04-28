@@ -30,21 +30,54 @@ export default function Rotj() {
         return (
           <div className="row">
             <div className="col s12 m12 l12">
-              {/* Imagine this div as a card with its pic and info on it like its name, etc  */}
-              <h2>{planet.name}</h2>
-              <img
-                className="img-responsive"
-                style={{ width: 500, height: 500 }}
-                src={planet.img}
-              ></img>
-              <li>Climate: {planet.climate}</li>
-              <li>Terrain: {planet.terrain}</li>
-              <li>Population: {planet.population}</li>
-              <li>Diameter: {planet.diameter}</li>
+              <div className="card center  grey darken-4">
+                <div className="row"></div>
+                <h1>
+                  <font face="Gothic edition" color="#ffff00">
+                    {planet.name}
+                  </font>
+                </h1>
+                <img
+                  className="img-responsive"
+                  style={{ width: 500, height: 500 }}
+                  src={planet.img}
+                ></img>
+                <h5>
+                  <font face="Gothic edition" size="6" color="#ffff00">
+                    Climate: {planet.climate}
+                  </font>
+                </h5>
+                <h5>
+                  <font face="Gothic edition" size="6" color="#ffff00">
+                    Terrain: {planet.terrain}
+                  </font>
+                </h5>
+                <h5>
+                  <font face="Gothic edition" size="6" color="#ffff00">
+                    Population: {planet.population}
+                  </font>
+                </h5>
+                <h5>
+                  <font face="Gothic edition" size="6" color="#ffff00">
+                    Diameter: {planet.diameter}
+                  </font>
+                </h5>
+                <h5>
+                  <font face="Gothic edition" size="6" color="#ffff00">
+                    Gravity: {planet.gravity}
+                  </font>
+                </h5>
+                <h5>
+                  <font face="Gothic edition" size="6" color="#ffff00">
+                    Surface Water: {planet.surface_water}
+                  </font>
+                </h5>
+                <div className="row"></div>
+              </div>
             </div>
           </div>
         );
       })}
     </div>
-  );
+);
 }
